@@ -169,7 +169,7 @@
             
              $(document).ready(function(){
                  $("#username").blur(function() {
-                     var valor = $("#username").val().length;
+                     valor = $("#username").val().length;
                      var array2 = new Object();
                      array2['usuario'] = $("#username").val();
                      $.ajax({
@@ -205,7 +205,7 @@
                     cache: false,
                     processData:false,
                     beforeSend: function(){
-                        var contenido= "<div class='col s12 m12 center'><div class='preloader-wrapper big active'><div class='spinner-layer spinner-blue-only'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div></div></div>";
+                        contenido= "<div class='col s12 m12 center'><div class='preloader-wrapper big active'><div class='spinner-layer spinner-blue-only'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div></div></div>";
                         $("#MsgClave").html(contenido);
                     },
                     success: function(data, textStatus, jqXHR)
