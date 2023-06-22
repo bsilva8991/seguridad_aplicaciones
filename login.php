@@ -1,5 +1,5 @@
 <?php
-include_once('config.php');
+include_once 'config.php';
 session_start();
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
@@ -19,4 +19,4 @@ if (isset($_POST['login'])) {
         }
     }
 }
-?>
+
